@@ -60,13 +60,19 @@ ul {
 
 
 /* Start Header*/
-header {}
+header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
+    min-height: 97px;
 }
 
 header .container::after {
@@ -96,6 +102,25 @@ header nav ul {
     display: flex;
    
 }
+@media (max-width: 768px) {
+    header nav ul {
+        display: none;
+    }
+}
+header nav .toggle:hover + ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+    background-color: (0 0 0 / 50%);
+}
+
+header nav .toggle:hover + ul li a {
+    padding: 15px;
+}
+
 
 header nav ul a {
     display: block;
@@ -119,7 +144,7 @@ header nav .form {
     height: 30px;
     position: relative;
     margin-left: 30px;
-    border-left:1px solid white ;
+    border-left:1px solid white;
 }
 
 header nav .form i {
@@ -129,6 +154,16 @@ header nav .form i {
     top: 50%;
     transform: translate(-50%, -50%);
     right: 0;
+}
+
+header nav .toggle  {
+    color: white;
+    font-size: 22px;
+}
+@media (min-width: 768px) {
+    header nav .toggle{
+        display: none;
+    } 
 }
 /* End Header*/
 
