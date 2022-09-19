@@ -437,10 +437,96 @@ header nav .toggle  {
 
 
 }
-
-
-
 /*End Design section*/
+
+/*Start Portfolio*/
+.portfolio {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.portfolio .shuffle {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio .shuffle li {
+    padding: 10px;
+}
+
+.portfolio .shuffle li.active {
+    background-color: var(--main-color);
+    color: white;
+}
+
+.portfolio .imgs-holder {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.portfolio .imgs-holder .box {
+    position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .portfolio .imgs-holder .box {
+        flex-basis: 50%;
+    }
+
+}
+
+@media (min-width: 1199px) {
+    .portfolio .imgs-holder .box {
+        flex-basis: 25%;
+    }
+
+}
+
+.portfolio .imgs-holder .box img {
+    max-width: 100%;
+    transition: 0.3s;
+}
+
+.portfolio .imgs-holder .box .caption {
+    position: absolute;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    transition: 0.3s;
+    bottom: -100%;
+
+}
+
+.portfolio .imgs-holder .box:hover .caption {
+    bottom: 0;
+
+}
+
+.portfolio .imgs-holder .box:hover img {
+    transform: rotate(3deg) scale(1.1);
+}
+.portfolio .imgs-holder .box .caption h4 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.portfolio .imgs-holder .box .caption p {
+    color: var(--main-color);
+}
+
+.portfolio .more {
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+/*End Portfolio*/
 
 
 
