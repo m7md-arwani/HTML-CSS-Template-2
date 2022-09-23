@@ -902,6 +902,52 @@ flex-wrap: wrap;
     margin-right: -15px
 
 }
+
+.pricing .plans .plan ul {
+    border-bottom: 1px solid var(--main-color);
+ }
+.pricing .plans .plan ul li {
+    padding: 20px;
+}
+.pricing .plans .plan ul li:not(:last-child) {
+    position: relative;
+}
+.pricing .plans .plan ul li:not(:last-child)::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    position: absolute;
+    background-color: var(--main-color);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.pricing .plan .foot a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid var(--main-color);
+    width: fit-content;
+    margin: 30px auto;
+
+}
+
+.pricing .contact-text {
+    text-align: center;
+    margin: 50px auto 20px;
+    font-size: 20px;
+}
+
+.pricing a {
+   display: block;
+   text-decoration: none;
+    width: fit-content;
+    margin: 20px auto;
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 30px;
+}
 /*End Pricing*/
 
 
