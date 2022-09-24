@@ -326,7 +326,6 @@ header nav .toggle  {
 .services{
 
     padding-top: 100px;
-    padding-bottom: 100px;
 }
 
 .services .srv-box {
@@ -1032,6 +1031,11 @@ margin-left: 50px;
 /*End Subscribe*/
 
 /*Start Contact*/
+
+.contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 .contact .content {
     display: flex;
     justify-content: space-between;
@@ -1121,9 +1125,55 @@ margin-left: 50px;
         margin-bottom: 40px;
     }
 }
-
-
 /*End Contact*/
+
+/*Start footer*/
+
+.footer {
+    padding-top:50px;
+    padding-bottom: 50px;
+    background-image: url("../images/subscribe.jpg");
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+  }
+  .footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+  }
+  .footer .container {
+    position: relative;
+  }
+  .footer img {
+    margin-bottom: 20px;
+  }
+  .footer p:not(.copyright) {
+    text-transform: uppercase;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    font-size: 22px;
+    width: fit-content;
+    margin: 20px auto;
+  }
+  .footer .social-icons i {
+    padding: 10px 15px;
+  }
+  .footer .copyright {
+    margin-top: 60px;
+  }
+  .footer .copyright span {
+    font-weight: bold;
+    color: var(--main-color);
+  }
+
+
+/*End Footer*/
 
 
 
